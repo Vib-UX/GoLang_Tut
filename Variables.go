@@ -1,5 +1,5 @@
 /* 1. Variables cant be declared 2 times in the same scope
-   2. Go is strongly typed you can't declare the variable which is not used in the application
+   2. Go is strongly typed you can't declare the variable which is not used in the package
 */
 
 package main
@@ -38,7 +38,7 @@ func main() {
 
 	// Conversion of int to string
 	var samp1 int = 48
-	var cnvSamp1 string = strconv.Itoa(samp1) // Integer to ascii
+	var cnvSamp1 string = strconv.Itoa(samp1) // Integer to ascii --> String
 	fmt.Printf("%v, %T\n", cnvSamp1, cnvSamp1)
 
 }
